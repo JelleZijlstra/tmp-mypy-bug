@@ -1,0 +1,118 @@
+
+LOG:  Mypy version 0.600
+TRACE: Looking for baddir at .mypy_cache/3.7/baddir/__init__.meta.json
+LOG:  Could not load cache for baddir: could not find .mypy_cache/3.7/baddir/__init__.meta.json
+LOG:  Metadata not found for baddir
+LOG:  Parsing baddir/__init__.py (baddir)
+TRACE: Looking for baddir.b at .mypy_cache/3.7/baddir/b.meta.json
+LOG:  Could not load cache for baddir.b: could not find .mypy_cache/3.7/baddir/b.meta.json
+LOG:  Metadata not found for baddir.b
+LOG:  Parsing baddir/b.py (baddir.b)
+TRACE: Looking for baddir.ba at .mypy_cache/3.7/baddir/ba.meta.json
+LOG:  Could not load cache for baddir.ba: could not find .mypy_cache/3.7/baddir/ba.meta.json
+LOG:  Metadata not found for baddir.ba
+LOG:  Parsing baddir/ba.py (baddir.ba)
+TRACE: Looking for baddir.c at .mypy_cache/3.7/baddir/c.meta.json
+LOG:  Could not load cache for baddir.c: could not find .mypy_cache/3.7/baddir/c.meta.json
+LOG:  Metadata not found for baddir.c
+LOG:  Parsing baddir/c.py (baddir.c)
+TRACE: Looking for builtins at .mypy_cache/3.7/builtins.meta.json
+LOG:  Could not load cache for builtins: could not find .mypy_cache/3.7/builtins.meta.json
+LOG:  Metadata not found for builtins
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/builtins.pyi (builtins)
+TRACE: Looking for socket at .mypy_cache/3.7/socket.meta.json
+LOG:  Could not load cache for socket: could not find .mypy_cache/3.7/socket.meta.json
+LOG:  Metadata not found for socket
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/2and3/socket.pyi (socket)
+TRACE: Looking for typing at .mypy_cache/3.7/typing.meta.json
+LOG:  Could not load cache for typing: could not find .mypy_cache/3.7/typing.meta.json
+LOG:  Metadata not found for typing
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/typing.pyi (typing)
+TRACE: Looking for abc at .mypy_cache/3.7/abc.meta.json
+LOG:  Could not load cache for abc: could not find .mypy_cache/3.7/abc.meta.json
+LOG:  Metadata not found for abc
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/abc.pyi (abc)
+TRACE: Looking for types at .mypy_cache/3.7/types.meta.json
+LOG:  Could not load cache for types: could not find .mypy_cache/3.7/types.meta.json
+LOG:  Metadata not found for types
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/types.pyi (types)
+TRACE: Looking for sys at .mypy_cache/3.7/sys.meta.json
+LOG:  Could not load cache for sys: could not find .mypy_cache/3.7/sys.meta.json
+LOG:  Metadata not found for sys
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/sys.pyi (sys)
+TRACE: Looking for enum at .mypy_cache/3.7/enum.meta.json
+LOG:  Could not load cache for enum: could not find .mypy_cache/3.7/enum.meta.json
+LOG:  Metadata not found for enum
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3.4/enum.pyi (enum)
+TRACE: Looking for collections at .mypy_cache/3.7/collections/__init__.meta.json
+LOG:  Could not load cache for collections: could not find .mypy_cache/3.7/collections/__init__.meta.json
+LOG:  Metadata not found for collections
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/collections/__init__.pyi (collections)
+TRACE: Looking for _importlib_modulespec at .mypy_cache/3.7/_importlib_modulespec.meta.json
+LOG:  Could not load cache for _importlib_modulespec: could not find .mypy_cache/3.7/_importlib_modulespec.meta.json
+LOG:  Metadata not found for _importlib_modulespec
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/_importlib_modulespec.pyi (_importlib_modulespec)
+TRACE: Looking for collections.abc at .mypy_cache/3.7/collections/abc.meta.json
+LOG:  Could not load cache for collections.abc: could not find .mypy_cache/3.7/collections/abc.meta.json
+LOG:  Metadata not found for collections.abc
+LOG:  Parsing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/collections/abc.pyi (collections.abc)
+LOG:  Loaded graph with 14 nodes (0.165 sec)
+LOG:  Found 5 SCCs; largest has 8 nodes
+TRACE: Priorities for _importlib_modulespec: abc:5 sys:10 typing:5
+TRACE: Priorities for types: sys:10 typing:5 _importlib_modulespec:5
+TRACE: Priorities for abc: typing:5 sys:10
+TRACE: Priorities for typing: sys:10 abc:5 types:5 collections:10
+TRACE: Priorities for collections: sys:10 typing:5 collections.abc:10
+TRACE: Priorities for sys: typing:5 types:5
+TRACE: Priorities for collections.abc: sys:10 collections:5
+TRACE: Priorities for builtins: typing:5 abc:5 types:5 sys:10
+LOG:  Processing SCC of size 8 (_importlib_modulespec types abc typing collections sys collections.abc builtins) as inherently stale
+LOG:  Writing _importlib_modulespec /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/_importlib_modulespec.pyi .mypy_cache/3.7/_importlib_modulespec.meta.json .mypy_cache/3.7/_importlib_modulespec.data.json None
+TRACE: Interface for _importlib_modulespec has changed
+LOG:  Cached module _importlib_modulespec has changed interface
+LOG:  Writing types /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/types.pyi .mypy_cache/3.7/types.meta.json .mypy_cache/3.7/types.data.json None
+TRACE: Interface for types has changed
+LOG:  Cached module types has changed interface
+LOG:  Writing abc /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/abc.pyi .mypy_cache/3.7/abc.meta.json .mypy_cache/3.7/abc.data.json None
+TRACE: Interface for abc has changed
+LOG:  Cached module abc has changed interface
+LOG:  Writing typing /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/typing.pyi .mypy_cache/3.7/typing.meta.json .mypy_cache/3.7/typing.data.json None
+TRACE: Interface for typing has changed
+LOG:  Cached module typing has changed interface
+LOG:  Writing collections /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/collections/__init__.pyi .mypy_cache/3.7/collections/__init__.meta.json .mypy_cache/3.7/collections/__init__.data.json None
+TRACE: Interface for collections has changed
+LOG:  Cached module collections has changed interface
+LOG:  Writing sys /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/sys.pyi .mypy_cache/3.7/sys.meta.json .mypy_cache/3.7/sys.data.json None
+TRACE: Interface for sys has changed
+LOG:  Cached module sys has changed interface
+LOG:  Writing collections.abc /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/collections/abc.pyi .mypy_cache/3.7/collections/abc.meta.json .mypy_cache/3.7/collections/abc.data.json None
+TRACE: Interface for collections.abc has changed
+LOG:  Cached module collections.abc has changed interface
+LOG:  Writing builtins /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3/builtins.pyi .mypy_cache/3.7/builtins.meta.json .mypy_cache/3.7/builtins.data.json None
+TRACE: Interface for builtins has changed
+LOG:  Cached module builtins has changed interface
+TRACE: Priorities for enum: 
+LOG:  Processing SCC singleton (enum) as inherently stale with stale deps (abc builtins sys typing)
+LOG:  Writing enum /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/3.4/enum.pyi .mypy_cache/3.7/enum.meta.json .mypy_cache/3.7/enum.data.json None
+TRACE: Interface for enum has changed
+LOG:  Cached module enum has changed interface
+TRACE: Priorities for baddir.c: 
+LOG:  Processing SCC singleton (baddir.c) as inherently stale with stale deps (builtins)
+LOG:  Writing baddir.c /Users/jzijlstra-mpbt/py/bin/mypybug/baddir/c.py .mypy_cache/3.7/baddir/c.meta.json .mypy_cache/3.7/baddir/c.data.json None
+TRACE: Interface for baddir.c has changed
+LOG:  Cached module baddir.c has changed interface
+TRACE: Priorities for socket: 
+LOG:  Processing SCC singleton (socket) as inherently stale with stale deps (builtins enum sys typing)
+LOG:  Writing socket /Users/jzijlstra-mpbt/py/venvs/venv37/lib/mypy/typeshed/stdlib/2and3/socket.pyi .mypy_cache/3.7/socket.meta.json .mypy_cache/3.7/socket.data.json None
+TRACE: Interface for socket has changed
+LOG:  Cached module socket has changed interface
+TRACE: Priorities for baddir: baddir.ba:10
+TRACE: Priorities for baddir.ba: baddir:5 baddir.b:10
+TRACE: Priorities for baddir.b: baddir:5
+LOG:  Processing SCC of size 3 (baddir baddir.ba baddir.b) as inherently stale with stale deps (baddir.c builtins socket)
+LOG:  Deleting baddir /Users/jzijlstra-mpbt/py/bin/mypybug/baddir/__init__.py .mypy_cache/3.7/baddir/__init__.meta.json .mypy_cache/3.7/baddir/__init__.data.json
+baddir/ba.py:2: error: Cannot determine type of 'LOCAL_HOSTNAME'
+LOG:  Deleting baddir.ba /Users/jzijlstra-mpbt/py/bin/mypybug/baddir/ba.py .mypy_cache/3.7/baddir/ba.meta.json .mypy_cache/3.7/baddir/ba.data.json
+LOG:  Deleting baddir.b /Users/jzijlstra-mpbt/py/bin/mypybug/baddir/b.py .mypy_cache/3.7/baddir/b.meta.json .mypy_cache/3.7/baddir/b.data.json
+LOG:  No fresh SCCs left in queue
+LOG:  Build finished in 0.920 seconds with 14 modules, and 1 errors
